@@ -1,0 +1,22 @@
+extends _layout
+
+block content
+  .ibm-columns
+    .ibm-col-6-2
+      .ibm-card
+        .ibm-card__content
+            h3.ibm-h3 #{ __('Personal Details') }
+            p.ibm-ind-link
+              a.ibm-forward-link(href='/shop/bikes') #{ __('Add a record') }
+    .ibm-col-6-2
+      .ibm-card
+          .ibm-card__content
+              h3.ibm-h3 #{ __('Educational Details') }
+              p.ibm-ind-link
+                a.ibm-forward-link(href='/shop/smart-phones') #{ __('Add a Record') }
+    .ibm-col-6-2
+      .ibm-card
+          .ibm-card__content
+              h3.ibm-h3 #{ __('Skills') }
+              p.ibm-ind-link
+                a.ibm-forward-link(href='/shop/skis') #{ __('Add a Record') }

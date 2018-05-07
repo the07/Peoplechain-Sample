@@ -1,0 +1,18 @@
+extends _layout
+
+block content
+  .ibm-columns(data-items='.ibm-card' data-widget='setsameheight')
+    .ibm-col-6-2.ibm-col-med-2-1.ibm-col-small-1-1
+      .ibm-card
+        .ibm-card__content
+          h3.ibm-h3 #{ __('Student Login') }
+          p.ibm-ind-link
+            a.ibm-forward-link(href='/insurance/self-service')
+              |  #{ __('Login') }
+    .ibm-col-6-2.ibm-col-med-2-1.ibm-col-small-1-1
+      .ibm-card
+        .ibm-card__content
+          h3.ibm-h3 #{ __('Claim Processing') }
+          p.ibm-ind-link
+            a.ibm-forward-link(href='/insurance/claim-processing')
+              |  #{ __('Process New Claims') }

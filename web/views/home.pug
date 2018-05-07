@@ -1,0 +1,38 @@
+extends _layout
+
+block content
+  .ibm-columns
+    .ibm-col-5-1
+    .ibm-col-5-3
+      .network-container
+        .network-circle
+        .ibm-card.insurance-peer
+          .ibm-card__content
+              a(href='/insurance')
+                h3.ibm-h3 #{ __('Institute') }
+              p.ibm-ind-link
+                a.ibm-forward-link(href='/insurance/self-service')
+                  | #{ __('Student Login') }
+              p.ibm-ind-link
+                a.ibm-forward-link(href='/insurance/claim-processing')
+                  | #{ __('Claim Processing') }
+        .ibm-card.shop-peer
+          .ibm-card__content
+            a(href='/shop')
+              h3.ibm-h3 #{ __('Candidate') }
+            p.ibm-ind-link
+              a.ibm-forward-link(href='/shop') #{ __('Go To The Candidate Peer') }
+        .ibm-card.police-peer
+          .ibm-card__content
+            a(href='/police')
+              h3.ibm-h3 #{ __('Regulator') }
+            p.ibm-ind-link
+              a.ibm-forward-link(href='/police')
+                | #{ __('Go To The AICTE Peer') }
+        .ibm-card.repair-shop-peer
+          .ibm-card__content
+            a(href='/repair-shop')
+              h3.ibm-h3 #{ __('Vocational Training Centre') }
+            p.ibm-ind-link
+              a.ibm-forward-link(href='/repair-shop')
+                | #{ __('Go to the VC Peer') }
